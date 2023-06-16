@@ -4,46 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="./css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
   </head>
-
   <body>
+    <!-- Header -->
     <header class="header">
-      <!-- Main navigation-->
       <div class="container header-container">
         <nav class="header-nav">
-          <a href="./index.html" class="header-logo link">
-            Web<span class="logo">Studio</span></a
+          <!-- Logo -->
+          <a class="header-logo link" href="./index.html"
+            >Web<span class="logo">Studio</span></a
           >
+          <!-- Menu Nav -->
           <ul class="header-nav-list list">
             <li class="header-nav-item">
-              <a href="./index.html" class="header-nav-link link">Studio</a>
+              <a class="header-nav-link link studio" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li class="header-nav-item">
-              <a href="./portfolio.html" class="header-nav-link link"
+              <a class="header-nav-link link" href="./portfolio.html"
                 >Portfolio</a
               >
             </li>
             <li class="header-nav-item">
-              <a href="" class="header-nav-link link">Contacts</a>
+              <a class="header-nav-link link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <!-- Contacts-->
+
+        <!-- Contact address -->
         <address class="address">
           <ul class="address-list list">
             <li class="address-item">
@@ -60,24 +61,26 @@
         </address>
       </div>
     </header>
-    <!-- Main content-->
-    <main>
-      <!-- Main header-->
 
+    <!-- Main content -->
+    <main>
+      <!-- Section Hero Image -->
       <section class="section-hero">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button data-modal-open type="button" class="hero-button">
+            Order Service
+          </button>
         </div>
       </section>
 
-      <!-- Company focus-->
+      <!-- Section-Our Features -->
       <section class="section-features">
         <div class="container">
           <!-- hidden attribute -->
-          <h2 class="visually-hidden">Company focus</h2>
+          <h2 class="visually-hidden">Our Features</h2>
           <ul class="features-list list">
-            <li class="features-item">
+            <li class="features-items">
               <div class="features-icon-box">
                 <svg class="features-icon" width="64" height="64">
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -89,6 +92,7 @@
                 the perfect and creative solution.
               </p>
             </li>
+
             <li class="features-item">
               <div class="features-icon-box">
                 <svg class="features-icon" width="64" height="64">
@@ -101,6 +105,7 @@
                 within the shortest possible time.
               </p>
             </li>
+
             <li class="features-item">
               <div class="features-icon-box">
                 <svg class="features-icon" width="64" height="64">
@@ -113,6 +118,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
+
             <li class="features-item">
               <div class="features-icon-box">
                 <svg class="features-icon" width="64" height="64">
@@ -129,7 +135,7 @@
         </div>
       </section>
 
-      <!-- Image company focus-->
+      <!-- Section-Our Products -->
       <section class="section-products">
         <div class="container">
           <h2 class="products-title">What are we doing</h2>
@@ -137,7 +143,7 @@
             <li class="products-item">
               <img
                 src="./images/monitor.jpg"
-                alt="computer-monitor"
+                alt="pc aplicatoin"
                 width="360"
                 height="300"
               />
@@ -145,15 +151,16 @@
             <li class="products-item">
               <img
                 src="./images/smartphone.jpg"
-                alt="smartphone-and-several-of-its-tabs"
+                alt="mobile aplication"
                 width="360"
                 height="300"
               />
             </li>
+
             <li class="products-item">
               <img
                 src="./images/laptop.jpg"
-                alt="laptop-on-the-table-and-smartphone-in-hand"
+                alt="quick access from any device"
                 width="360"
                 height="300"
               />
@@ -162,7 +169,7 @@
         </div>
       </section>
 
-      <!-- Company Team-->
+      <!-- Section-Our Team -->
       <section class="section-team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
@@ -171,7 +178,7 @@
               <img
                 class="team-photo"
                 src="./images/Mark.jpg"
-                alt="team-card"
+                alt="Photo of Mark Guerrero-Product Designer"
                 width="264"
                 height="260"
               />
@@ -230,7 +237,7 @@
               <img
                 class="team-photo"
                 src="./images/Tom.jpg"
-                alt="team-card-2"
+                alt="Photo of Tom Ford-Frontend Developer"
                 width="264"
                 height="260"
               />
@@ -289,7 +296,7 @@
               <img
                 class="team-photo"
                 src="./images/Camila.jpg"
-                alt="team-card-3"
+                alt="Photo of Camila Garcia-Marketing"
                 width="264"
                 height="260"
               />
@@ -348,7 +355,7 @@
               <img
                 class="team-photo"
                 src="./images/Daniel.jpg"
-                alt="team-card-4"
+                alt="Photo of Daniel Wilson-UI Designer"
                 width="264"
                 height="260"
               />
@@ -406,6 +413,7 @@
           </ul>
         </div>
       </section>
+
       <!-- Customers -->
       <section class="section-customers">
         <div class="container">
